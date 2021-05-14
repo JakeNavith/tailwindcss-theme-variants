@@ -1,7 +1,7 @@
 <script>
     import Icon from "@iconify/svelte";
     
-	import exclamation from "@iconify/icons-heroicons-solid/exclamation";
+	import exclamation from "@iconify-icons/heroicons-solid/exclamation";
 </script>
 
 <style>

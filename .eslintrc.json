@@ -21,7 +21,7 @@
     },
     "parserOptions": {
         "ecmaVersion": 2019,
-        "extraFileExtensions": [".mjs"],
+        "extraFileExtensions": [".cjs", ".mjs"],
         "sourceType": "module",
         "project": "./tsconfig.json"
     },

@@ -1,8 +1,23 @@
 <script>
-	import Metadata from "$lib/Metadata.svelte";
+	// @ts-nocheck
+	
+	import Metadata from "../components/Metadata.svelte";
 
 	import SiteAll from "../rendered-content/site-all.svx";
 	import SiteTOC from "../rendered-content/site-toc.svx";
+
+	import { onMount } from "svelte";
+	onMount(async () => {
+		// https://github.com/sveltejs/sapper/issues/904#issuecomment-540536561
+		document.querySelectorAll("a").forEach((a) => {
+			if (a.origin === window.location.origin) {
+				if (a.href.endsWith("/")) return;
+
+				// https://github.com/sveltejs/sapper/issues/904#issuecomment-591088898
+				a.href = window.location.origin + window.location.pathname + a.hash;
+			}
+        });
+	});
 </script>
 
 <Metadata />

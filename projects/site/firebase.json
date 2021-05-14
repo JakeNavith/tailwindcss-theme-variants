@@ -1,8 +1,5 @@
 {
-	"hosting": {
-		"public": "__sapper__/export"
-	},
-	"functions": {
-		"source": "."
-	}
+    "hosting": {
+        "public": "build"
+    }
 }

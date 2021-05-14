@@ -1,8 +1,8 @@
 <script>
 	import Icon from "@iconify/svelte";
     
-	import check from "@iconify/icons-heroicons-solid/check";
-	import x from "@iconify/icons-heroicons-solid/x";
+	import check from "@iconify-icons/heroicons-solid/check";
+	import x from "@iconify-icons/heroicons-solid/x";
 
 	type Type = "yes" | "kinda" | "no";
 	export let type: Type;

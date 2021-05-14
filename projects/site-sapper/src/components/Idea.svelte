@@ -1,7 +1,7 @@
 <script>
     import Icon from "@iconify/svelte";
     
-	import lightBulb from "@iconify/icons-heroicons-solid/light-bulb";
+	import lightBulb from "@iconify-icons/heroicons-solid/light-bulb";
 </script>
 
 <style>

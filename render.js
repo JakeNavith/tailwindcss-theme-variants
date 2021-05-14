@@ -45,10 +45,10 @@ const renderContent = async () => {
 	formatted = formatted.replace(/❌/gm, "<Feature type='no' />");
 	formatted = `
 <script>
-	import WatchOut from "../components/WatchOut.svelte";
-	import Idea from "../components/Idea.svelte";
+	import WatchOut from "$lib/WatchOut.svelte";
+	import Idea from "$lib/Idea.svelte";
 
-	import Feature from "../components/Feature.svelte";
+	import Feature from "$lib/Feature.svelte";
 </script>
 
 

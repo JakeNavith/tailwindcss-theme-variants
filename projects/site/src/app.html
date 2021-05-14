@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%svelte.head%
+		<script>
+			const theme = JSON.parse(localStorage.getItem("theme") || '"system"');
+			if (theme !== "system") document.documentElement.setAttribute("data-theme", theme);
+		</script>
+	</head>
+	<body class="flex flex-col w-full min-h-screen overflow-hidden leading-none bg-primary text-on-primary antialiased transition-theme">
+		<div class="flex flex-col flex-1" id="svelte">%svelte.body%</div>
+	</body>
+</html>

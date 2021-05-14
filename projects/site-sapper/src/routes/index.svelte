@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	import Icon from "@iconify/svelte";
 
 	import chevronRight from "@iconify-icons/heroicons-solid/chevron-right";

@@ -8,19 +8,22 @@
 	import github from "@iconify-icons/mdi/github";
 	import npm from "@iconify-icons/mdi/npm-variant";
 
+    import type { Writable } from "svelte/store";
+
 	const themeIcons = {
 		light: sun,
 		dark: moon,
 		system: colorSwatch,
     };
     
-    const links = [
+    type Link = [typeof github, string, string];
+    const links: Link[] = [
         [github, "GitHub", "https://github.com/JakeNavith/tailwindcss-theme-variants"],
         [npm, "npm", "https://www.npmjs.com/package/tailwindcss-theme-variants"]
     ];
 
-    export let theme;
-    export let themeOptions;
+    export let theme: Writable<string | undefined>;
+    export let themeOptions: (keyof typeof themeIcons)[];
 </script>
 
 

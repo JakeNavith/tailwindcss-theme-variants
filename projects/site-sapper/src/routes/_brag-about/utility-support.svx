@@ -11,6 +11,7 @@ dividerColor: "border-brag-about-purple-icon-bg"
 <script context="module">
 	import collection from "@iconify-icons/heroicons-solid/collection";
 	
+	// @ts-ignore
 	metadata.icon = collection;
 </script>
 
